@@ -5,3 +5,5 @@ Curation of images, publications, articles, blogs, posts, courses, videos used f
 
 - [ethereum-buzz-words](./ethereum-buzz-words.png)
   - [DEVCON1: Ethereum for Dummies - Dr. Gavin Wood](https://www.youtube.com/watch?v=U_LK0t_qaPo&t=173s)
+- [learning-solidity by will it scale](./learning-solidity)
+  - [WillItScale/learning-solidity](https://github.com/willitscale/learning-solidity)
