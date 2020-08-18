@@ -1,0 +1,20 @@
+{
+  "name": "solidity-assembly-string-operations",
+  "version": "1.0.0",
+  "description": "String utils in solidity + assembly",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "solidity-coverage": "^0.7.2",
+    "truffle": "^5.1.18",
+    "truffle-assertions": "^0.9.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "truffle test"
+  },
+  "author": "",
+  "license": "ISC"
+}
