@@ -2,7 +2,7 @@
 
 - [Explain how Zap and Earn work](#Explain-how-Zap-and-Earn-work)
 - [Explain y tokens](#explain-y-tokens)
-- [Explain y.curve.fi,y.busd.fi](#explain-ycurvefi-ybusdfi)
+- [Explain y.curve.fi, y.busd.fi](#explain-ycurvefi-ybusdfi)
 - [Explain how the interest rate is calculated, how Yearn determines where to deposit user funds and how interest is calculated.](#explain-how-the-interest-rate-is-calculated-how-Yearn-determines-where-to-deposit-user-funds-and-how-interest-is-calculated) 
 
 ## Explain how Zap and Earn work
@@ -30,5 +30,9 @@
 - Profit switching lender to optimize lending yields (live)
 
 ## Explain y tokens
+
+Mainnet address : [0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e](https://etherscan.io/address/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e)
+
+
 ## Explain [y.curve.fi](https://y.curve.fi), [y.busd.fi](https://y.busd.fi)
 ## Explain how the interest rate is calculated, how Yearn determines where to deposit user funds and how interest is calculated.
