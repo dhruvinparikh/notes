@@ -2,30 +2,17 @@
 
 ## Description
 
-Use the yearn finance, you can invest stablecoins in the protocol with highest interest rate automatically without a need of checking interest rate of all platforms individually. Technically, you send tokens to the smart contract of yearn finance, the tokens will automaticlly forwarded to the protocol with highest interest rate.
+Using the yearn finance, you can invest stablecoins in the protocol with highest interest rate automatically without a need of checking interest rate of all platforms individually. Technically, you send tokens to the smart contract of yearn finance, the tokens will be automatically forwarded to the protocol with highest interest rate.
 
-Invest stablecoin into yearn protocol and yearn re-invests the same stablecoins in different yield protocol.
+Invest stablecoin into yearn protocol and yearn re-invests the same stablecoins in different yield protocols.
 
 ![yearn-protocol](./assets/images/yearn-protocol.svg)
-
-Yearn has different smart contract for different stablecoins:
--  <a href="https://etherscan.io/token/0x16de59092dae5ccf4a1e6439d611fd0653f0bd01" target="_blank">yDAI</a> contract is for <a href="https://etherscan.io/token/0x6b175474e89094c44da98b954eedeac495271d0f" target="_blank">DAI</a> stablecoin.
-- <a href="https://etherscan.io/token/0xd6ad7a6750a7593e092a9b218d66c0a814a3436e" target="_blank">yUSDC</a> contract is for <a href="https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48" target="_blank">USDC</a> stablecoin
-- <a href="https://etherscan.io/token/0xa1787206d5b1be0f432c4c4f96dc4d1257a1dd14" target="_blank">yUSDT</a> contract is for <a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7" target="_blank">USDT</a> stablecoin
-- <a href="https://etherscan.io/token/0x73a052500105205d34daf004eab301916da8190f" target="_blank">yTUSD</a> contract is for <a href="https://etherscan.io/token/0x0000000000085d4780B73119b644AE5ecd22b376" target="_blank">TUSD</a> stablecoin
-- <a href="https://etherscan.io/token/0x36324b8168f960a12a8fd01406c9c78143d41380" target="_blank">ySUSD</a> contract is for <a href="https://etherscan.io/token/0x57ab1ec28d129707052df4df418d58a2d46d5f51" target="_blank">SUSD</a> stablecoin
-- <a href="https://etherscan.io/token/0x04aa51bbcb46541455ccf1b8bef2ebc5d3787ec9" target="_blank">yWBTC</a> contract is for <a href="https://etherscan.io/token/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599" target="_blank">WBTC</a> stablecoin
-
-![](./assets/images/yearn-protocol-aave.svg)
-- As shown in the above diagram, the owner will send DAI tokens to <a href="https://etherscan.io/token/0x16de59092dae5ccf4a1e6439d611fd0653f0bd01" target="_blank">yDAI</a>  contract. The contract forward that tokens to <a href="https://etherscan.io/token/0xfC1E690f61EFd961294b3e1Ce3313fBD8aa4f85d" target="_blank">Aave Interest bearing DAI (aDAI)</a> contract as it might gave higher interest rate at that point in time. This DeFi contract will give liquidity provider token (aDAI token) in return. The rebalancing in the protocol happens everytime someone invests in the yearn finance protocol.
 
 ## Architecture of a DeFi wallet
 
 ![defi-wallet-architecture](./assets/images/yearn-protocol-wallet-aave.svg)
 
 - The <a href="https://etherscan.io/token/0x6b175474e89094c44da98b954eedeac495271d0f" target="_blank">DAI</a> is not sent directly to the <a href="https://etherscan.io/token/0x16de59092dae5ccf4a1e6439d611fd0653f0bd01" target="_blank">yDAI</a> contract, instead it is sent to wallet contract and the wallet triggers the operation.
-
-## Advantage investing in yearn finance
 
 - When you spend <a href="https://etherscan.io/token/0x6b175474e89094c44da98b954eedeac495271d0f" target="_blank">DAI</a> , you did not need to withdraw the same from yearn finance protocol and afterwards transfer the DAI. Everthing is done in single transaction. So, just ask the wallet to send [50 DAI] to the destination address. The remainder of DAI in the wallet will get reinvested in the yearn finance protocol to keep earning interest.
 - It abstracts the yearn finance protocol. All that end user has to do is send token to wallet and it automatically earns interest without worry about mechanics of DeFi protocol.
@@ -61,6 +48,17 @@ Yearn has different smart contract for different stablecoins:
 - Deposit DAI, USDC, USDT, TUSD, or sUSD and it will auto lend to the highest lending rate on these platforms [Compound](https://compound.finance/), [Dydx](https://dydx.exchange/), or [Aave](https://app.aave.com/home) (Ddex and Fulcrum are currently disabled)
 - Info on this can be found in the [Yearn Docs](https://docs.yearn.finance/yearn.finance/yearn)
 - Profit switching lender to optimize lending yields (live)
+
+Yearn has different smart contract for different stablecoins:
+-  <a href="https://etherscan.io/token/0x16de59092dae5ccf4a1e6439d611fd0653f0bd01" target="_blank">yDAI</a> contract is for <a href="https://etherscan.io/token/0x6b175474e89094c44da98b954eedeac495271d0f" target="_blank">DAI</a> stablecoin.
+- <a href="https://etherscan.io/token/0xd6ad7a6750a7593e092a9b218d66c0a814a3436e" target="_blank">yUSDC</a> contract is for <a href="https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48" target="_blank">USDC</a> stablecoin
+- <a href="https://etherscan.io/token/0xa1787206d5b1be0f432c4c4f96dc4d1257a1dd14" target="_blank">yUSDT</a> contract is for <a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7" target="_blank">USDT</a> stablecoin
+- <a href="https://etherscan.io/token/0x73a052500105205d34daf004eab301916da8190f" target="_blank">yTUSD</a> contract is for <a href="https://etherscan.io/token/0x0000000000085d4780B73119b644AE5ecd22b376" target="_blank">TUSD</a> stablecoin
+- <a href="https://etherscan.io/token/0x36324b8168f960a12a8fd01406c9c78143d41380" target="_blank">ySUSD</a> contract is for <a href="https://etherscan.io/token/0x57ab1ec28d129707052df4df418d58a2d46d5f51" target="_blank">SUSD</a> stablecoin
+- <a href="https://etherscan.io/token/0x04aa51bbcb46541455ccf1b8bef2ebc5d3787ec9" target="_blank">yWBTC</a> contract is for <a href="https://etherscan.io/token/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599" target="_blank">WBTC</a> stablecoin
+
+![](./assets/images/yearn-protocol-aave.svg)
+- As shown in the above diagram, the owner will send DAI tokens to <a href="https://etherscan.io/token/0x16de59092dae5ccf4a1e6439d611fd0653f0bd01" target="_blank">yDAI</a>  contract. The contract forward that tokens to <a href="https://etherscan.io/token/0xfC1E690f61EFd961294b3e1Ce3313fBD8aa4f85d" target="_blank">Aave Interest bearing DAI (aDAI)</a> contract as it might gave higher interest rate at that point in time. This DeFi contract will give liquidity provider token (aDAI token) in return. The rebalancing in the protocol happens everytime someone invests in the yearn finance protocol.
 
 #### What is Earn protocol?
 
