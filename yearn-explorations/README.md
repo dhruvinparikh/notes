@@ -80,9 +80,16 @@ Yearn has different smart contract for different stablecoins:
 
 ## Explain y tokens
 
-The [yearn.finance](https://yearn.finance/) ecosystem is controlled by `$YFI` token
+- When you deposit your tokens to yearn.finance, they are converted to yTokens, which are periodically rebalanced to choose the most profitable lending service(s). Curve.fi is a prominent integrator of yTokens - creating an AMM (Automated Market Maker) between yDAI, yUSDC, yUSDT, yTUSD that not only earns the lending fees but also the trading fees on Curve.fi.
+- Yield earning tokens
+- Interest bearing asset
+- It is the liquidity provider tokens returned to the investors on investment to yearn.
+- After depositing `$DAI` into <a href="yearn.finance">yearn.finance</a> you receive `$yDAI`. You can provide `$yDAI` as liquidity to <a href="curve.fi">curve.fi</a>. You can earn trade fees (0.04% per trade) on top of yield rewards. 
+- <a href="curve.fi">curve.fi</a> supports $yDAI, $yUSDC, $yUSDT, $yTUSD
 
+## Explain `$YFI`
 
+- YFI, yearn.finance's governance token, is distributed only to users who provide liquidity with certain yTokens. With no pre-mine, pre-sale, or allocation to the team, YFI strives to be the most decentralized token. Although most of the ecosystem was built by Andre Cronje, control of YFI was transferred to a multi-signature wallet, which requires 6 out of 9 participants to agree on changes.
 
 ### Technical details
 Mainnet address : [0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e](https://etherscan.io/address/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e)
@@ -116,4 +123,14 @@ Mainnet address : [0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e](https://etherscan
 
 
 ## Explain [y.curve.fi](https://y.curve.fi), [y.busd.fi](https://y.busd.fi)
+
+### [y.curve.fi](https://y.curve.fi)
+
+-
+
+### [y.busd.fi](https://y.busd.fi)
+ -
+
 ## Explain how the interest rate is calculated, how Yearn determines where to deposit user funds and how interest is calculated.
+
+### 
