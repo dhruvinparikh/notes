@@ -120,8 +120,6 @@ Mainnet address : [0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e](https://etherscan
       governance = _governance;
   }
 ```
-
-
 ## Explain [y.curve.fi](https://y.curve.fi), [y.busd.fi](https://y.busd.fi)
 
 ### [y.curve.fi](https://y.curve.fi)
@@ -133,4 +131,8 @@ Mainnet address : [0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e](https://etherscan
 
 ## Explain how the interest rate is calculated, how Yearn determines where to deposit user funds and how interest is calculated.
 
-### 
+- There is a rebalancer that takes care about pool which earns best APR. The pool with highest APR will be recommended by <a href="https://etherscan.io/address/0xdD6d648C991f7d47454354f4Ef326b04025a48A8">IEarnAPRWithPool</a> contract.
+
+`deposit()`
+- pool - total number of DAI tokens held by yDAI contract all lending pools (compound, aave, dy/dx, fulcrum, ddex)
+- 
