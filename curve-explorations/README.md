@@ -20,7 +20,8 @@
 
 ## Explain how APY is calculated for each pool
 
-- 
+- APR stands for Annual Percentage rate
+
 ## Create a simple UI that either connects to DeFi Wallet like MetaMask or Wallet address is hard-coded
 ## The UI lets user deposit 1 DAI (or any currency) into Curve pool and withdraw same token
 ## Explain how profit was calculated
@@ -60,7 +61,7 @@
 // (9+1) x (1111.11 - x) = 100000 yields x ~ 111 (111.11)
 // Thus the equation with which we started 10 x 1000 = 10000 satisfies
 
-// Summarizing
+// Summarizing the above the explanation
 // Alice bought bought ETH by sending DAIs that changes the ratio.
 // Bob realized this is incorrect price and hence got ETH from coinbase 
 // and sold it back to pool and made $11 profit and eventually it bought 
@@ -82,8 +83,21 @@
 // powerful because all we need to do is give two quantity of tokens to 
 // the smart contract. It will inturn set correct price and make sure 
 // that the we can consistently make money by providing this liquidity.
+
 // Each trade on AMM comes with a fee usually in range of 0.1% to 0.3%. 
-// So everytime you buy and take tokens from this curve
+// So everytime we buy and take tokens from this curve we will be paying 
+// little fee. So the liquidity provider gets incentivised by giving 
+// little bit of ETH and little bit of DAI. 
+
+// That is what we call market maker.
+
+// In a nutshell
+// We have traditional orderbooks are constant negotiation between buyers and sellers.
+// The problem with order book is constant update to smart contract which is slow and expensive.
+// AMM has no orderbooks. The smart contract calculates price-ratio. 
+// It calculates the price by determining the ratio of two tokens using equation X x Y = k where one side of equation will have chaneg in the value and the solving the equation gives us new price of ETH. So shift in the price opens the door for arbitrages to restore the price by selling back to the pool (reversing the trade). Calculation's explanation is shown above. 
+// Deeper the orderbook, less change in the price.
+// If we will provide X and/or Y to the pool, we will earn the fee as we are providing services to other users.
 ```
 
 ## Explain CRV
