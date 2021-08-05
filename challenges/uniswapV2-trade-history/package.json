@@ -1,0 +1,60 @@
+{
+  "name": "uniswapv2-trade-history",
+  "description": "A utility to transform uniswapV2 trades into human readable",
+  "version": "1.0.0",
+  "author": {
+    "name": "Dhruvin Parikh",
+    "url": "twitter.com/dhruvinparik_"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@types/node": "^15.12.5",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "pinst": "^2.1.6",
+    "prettier": "^2.3.2",
+    "shx": "^0.3.3",
+    "ts-node": "^10.0.0",
+    "typescript": "~4.2.4"
+  },
+  "files": [
+    "/dist",
+    "/types"
+  ],
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc --build tsconfig.prod.json",
+    "clean": "shx rm -rf ./dist",
+    "commit": "git-cz",
+    "lint": "yarn run lint:ts && yarn run prettier:check",
+    "lint:ts": "eslint --config ./.eslintrc.yaml --ignore-path ./.eslintignore --ext .js,.ts .",
+    "postinstall": "husky install",
+    "postpublish": "pinst --enable",
+    "prepublishOnly": "pinst --disable",
+    "prettier": "prettier --config ./.prettierrc --write \"**/*.{js,json,md,ts}\"",
+    "prettier:check": "prettier --check --config ./.prettierrc \"**/*.{js,json,md,ts}\""
+  },
+  "types": "./types/index.d.ts",
+  "dependencies": {
+    "@ethersproject/abi": "^5.4.0",
+    "@ethersproject/address": "^5.4.0",
+    "@ethersproject/bignumber": "^5.4.0",
+    "@ethersproject/units": "^5.4.0",
+    "abi-decoder": "^2.4.0",
+    "async": "^3.2.0",
+    "commander": "^8.0.0",
+    "ethers": "^5.4.1",
+    "etherscan-api": "^10.0.5"
+  }
+}

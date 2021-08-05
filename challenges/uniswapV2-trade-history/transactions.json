@@ -1,0 +1,961 @@
+[
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "swapping coins",
+    "date": "Sat Sep 19 2020",
+    "time": "04:29:17 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0x",
+        "name": "Ethers",
+        "symbol": "ETH",
+        "amount": "- 0.6 ETH",
+        "fees": "0.0018 ETH",
+        "actual_amount": "0.5982 ETH"
+      },
+      {
+        "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "amount": "+ 225.71836",
+        "fees": "0.0 USDC",
+        "actual_amount": "225.71836 USDC"
+      }
+    ],
+    "transaction_fees": "0.017199312 ETH",
+    "id": "0",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "adding liquidity",
+    "date": "Sun Sep 20 2020",
+    "time": "22:03:26 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0x",
+        "name": "Ethers",
+        "symbol": "ETH",
+        "amount": "- 0.605401209211164414 ETH",
+        "fees": "0.0 ETH",
+        "actual_amount": "0.605401209211164414 ETH"
+      },
+      {
+        "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "amount": "- 225.71836",
+        "fees": "0.0 USDC",
+        "actual_amount": "225.71836 USDC"
+      },
+      {
+        "address": "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc",
+        "name": "Uniswap V2",
+        "symbol": "UNI-V2",
+        "amount": "+ 0.000009451810133859",
+        "fees": "0.0 UNI-V2",
+        "actual_amount": "0.000009451810133859 UNI-V2"
+      }
+    ],
+    "transaction_fees": "0.01205352 ETH",
+    "id": "2",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "swapping coins",
+    "date": "Tue Sep 22 2020",
+    "time": "10:36:39 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0x",
+        "name": "Ethers",
+        "symbol": "ETH",
+        "amount": "- 1.5 ETH",
+        "fees": "0.0045 ETH",
+        "actual_amount": "1.4955 ETH"
+      },
+      {
+        "address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+        "name": "Uniswap",
+        "symbol": "UNI",
+        "amount": "+ 131.191259859324187685",
+        "fees": "0.0 UNI",
+        "actual_amount": "131.191259859324187685 UNI"
+      }
+    ],
+    "transaction_fees": "0.022457280170651935 ETH",
+    "id": "3",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "undefined",
+    "date": "Tue Sep 22 2020",
+    "time": "10:36:39 GMT-0400 (Eastern Daylight Time)",
+    "assets": [],
+    "transaction_fees": "0.005970087 ETH",
+    "id": "4",
+    "success": false
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "swapping coins",
+    "date": "Tue Sep 22 2020",
+    "time": "10:46:56 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0x",
+        "name": "Ethers",
+        "symbol": "ETH",
+        "amount": "- 1.35 ETH",
+        "fees": "0.00405 ETH",
+        "actual_amount": "1.34595 ETH"
+      },
+      {
+        "address": "0xc00e94cb662c3520282e6f5717214004a7f26888",
+        "name": "Compound",
+        "symbol": "COMP",
+        "amount": "+ 3.290163722707490821",
+        "fees": "0.0 COMP",
+        "actual_amount": "3.290163722707490821 COMP"
+      }
+    ],
+    "transaction_fees": "0.024804096 ETH",
+    "id": "5",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "adding liquidity",
+    "date": "Thu Sep 24 2020",
+    "time": "18:42:13 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0x",
+        "name": "Ethers",
+        "symbol": "ETH",
+        "amount": "- 0.5 ETH",
+        "fees": "0.0 ETH",
+        "actual_amount": "0.5 ETH"
+      },
+      {
+        "address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+        "name": "Uniswap",
+        "symbol": "UNI",
+        "amount": "- 33.763098098009158311",
+        "fees": "0.0 UNI",
+        "actual_amount": "33.763098098009158311 UNI"
+      },
+      {
+        "address": "0xd3d2e2692501a5c9ca623199d38826e513033a17",
+        "name": "Uniswap V2",
+        "symbol": "UNI-V2",
+        "amount": "+ 2.278810407587067072",
+        "fees": "0.0 UNI-V2",
+        "actual_amount": "2.278810407587067072 UNI-V2"
+      }
+    ],
+    "transaction_fees": "0.00876590019676074 ETH",
+    "id": "7",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "swapping coins",
+    "date": "Thu Sep 24 2020",
+    "time": "18:42:36 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0xc00e94cb662c3520282e6f5717214004a7f26888",
+        "name": "Compound",
+        "symbol": "COMP",
+        "amount": "- 0.566998750622003431",
+        "fees": "0.00170099625186601 COMP",
+        "actual_amount": "0.565297754370137421 COMP"
+      },
+      {
+        "address": "0x",
+        "name": "Ethers",
+        "symbol": "ETH",
+        "amount": "+ 0.227047052290434863 ETH",
+        "fees": "0 ETH",
+        "actual_amount": "0.227047052290434863 ETH"
+      }
+    ],
+    "transaction_fees": "0.008901412 ETH",
+    "id": "9",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "swapping coins",
+    "date": "Thu Sep 24 2020",
+    "time": "18:46:53 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0xc00e94cb662c3520282e6f5717214004a7f26888",
+        "name": "Compound",
+        "symbol": "COMP",
+        "amount": "- 2.72316497208548739",
+        "fees": "0.008169494916256462 COMP",
+        "actual_amount": "2.714995477169230928 COMP"
+      },
+      {
+        "address": "0x",
+        "name": "Ethers",
+        "symbol": "ETH",
+        "amount": "+ 1.08961687047010355 ETH",
+        "fees": "0 ETH",
+        "actual_amount": "1.08961687047010355 ETH"
+      }
+    ],
+    "transaction_fees": "0.007063808 ETH",
+    "id": "10",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "undefined",
+    "date": "Thu Sep 24 2020",
+    "time": "18:49:41 GMT-0400 (Eastern Daylight Time)",
+    "assets": [],
+    "transaction_fees": "0.001926162 ETH",
+    "id": "11",
+    "success": false
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "undefined",
+    "date": "Thu Sep 24 2020",
+    "time": "19:05:07 GMT-0400 (Eastern Daylight Time)",
+    "assets": [],
+    "transaction_fees": "0.001905876 ETH",
+    "id": "12",
+    "success": false
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "adding liquidity",
+    "date": "Thu Sep 24 2020",
+    "time": "19:07:58 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0x",
+        "name": "Ethers",
+        "symbol": "ETH",
+        "amount": "- 1.3 ETH",
+        "fees": "0.0 ETH",
+        "actual_amount": "1.3 ETH"
+      },
+      {
+        "address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+        "name": "Uniswap",
+        "symbol": "UNI",
+        "amount": "- 87.528033297041441782",
+        "fees": "0.0 UNI",
+        "actual_amount": "87.528033297041441782 UNI"
+      },
+      {
+        "address": "0xd3d2e2692501a5c9ca623199d38826e513033a17",
+        "name": "Uniswap V2",
+        "symbol": "UNI-V2",
+        "amount": "+ 5.915650011108333012",
+        "fees": "0.0 UNI-V2",
+        "actual_amount": "5.915650011108333012 UNI-V2"
+      }
+    ],
+    "transaction_fees": "0.011010862 ETH",
+    "id": "13",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "removing liquidity",
+    "date": "Thu Sep 24 2020",
+    "time": "19:31:35 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc",
+        "name": "Uniswap V2",
+        "symbol": "UNI-V2",
+        "amount": "- 0.000009451810133859",
+        "fees": "0.0 UNI-V2",
+        "actual_amount": "0.000009451810133859 UNI-V2"
+      },
+      {
+        "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "amount": "+ 219.218238",
+        "fees": "0.0 USDC",
+        "actual_amount": "219.218238 USDC"
+      },
+      {
+        "address": "0x",
+        "name": "Ethers",
+        "symbol": "ETH",
+        "amount": "+ 0.625194891897037767 ETH",
+        "fees": "0 ETH",
+        "actual_amount": "0.625194891897037767 ETH"
+      }
+    ],
+    "transaction_fees": "0.015132408 ETH",
+    "id": "14",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "swapping coins",
+    "date": "Thu Sep 24 2020",
+    "time": "19:33:01 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "amount": "- 219.218238",
+        "fees": "0.657654 USDC",
+        "actual_amount": "218.560584 USDC"
+      },
+      {
+        "address": "0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f",
+        "name": "Synthetix Network Token",
+        "symbol": "SNX",
+        "amount": "+ 49.27138415459089652",
+        "fees": "0.0 SNX",
+        "actual_amount": "49.27138415459089652 SNX"
+      }
+    ],
+    "transaction_fees": "0.0154422 ETH",
+    "id": "15",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "adding liquidity",
+    "date": "Thu Sep 24 2020",
+    "time": "19:36:26 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0x",
+        "name": "Ethers",
+        "symbol": "ETH",
+        "amount": "- 0.6 ETH",
+        "fees": "0.0 ETH",
+        "actual_amount": "0.6 ETH"
+      },
+      {
+        "address": "0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f",
+        "name": "Synthetix Network Token",
+        "symbol": "SNX",
+        "amount": "- 47.475436426781778985",
+        "fees": "0.0 SNX",
+        "actual_amount": "47.475436426781778985 SNX"
+      },
+      {
+        "address": "0x43ae24960e5534731fc831386c07755a2dc33d47",
+        "name": "Uniswap V2",
+        "symbol": "UNI-V2",
+        "amount": "+ 4.436874297811896903",
+        "fees": "0.0 UNI-V2",
+        "actual_amount": "4.436874297811896903 UNI-V2"
+      }
+    ],
+    "transaction_fees": "0.015466425 ETH",
+    "id": "17",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "swapping coins",
+    "date": "Thu Sep 24 2020",
+    "time": "20:07:08 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0x",
+        "name": "Ethers",
+        "symbol": "ETH",
+        "amount": "- 1.125 ETH",
+        "fees": "0.003375 ETH",
+        "actual_amount": "1.121625 ETH"
+      },
+      {
+        "address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+        "name": "Uniswap",
+        "symbol": "UNI",
+        "amount": "+ 76.415920182341989671",
+        "fees": "0.0 UNI",
+        "actual_amount": "76.415920182341989671 UNI"
+      }
+    ],
+    "transaction_fees": "0.006423795 ETH",
+    "id": "18",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "adding liquidity",
+    "date": "Thu Sep 24 2020",
+    "time": "20:08:03 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0x",
+        "name": "Ethers",
+        "symbol": "ETH",
+        "amount": "- 1.266908545980435572 ETH",
+        "fees": "0.0 ETH",
+        "actual_amount": "1.266908545980435572 ETH"
+      },
+      {
+        "address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+        "name": "Uniswap",
+        "symbol": "UNI",
+        "amount": "- 86.316048646615577263",
+        "fees": "0.0 UNI",
+        "actual_amount": "86.316048646615577263 UNI"
+      },
+      {
+        "address": "0xd3d2e2692501a5c9ca623199d38826e513033a17",
+        "name": "Uniswap V2",
+        "symbol": "UNI-V2",
+        "amount": "+ 5.797532103585328856",
+        "fees": "0.0 UNI-V2",
+        "actual_amount": "5.797532103585328856 UNI-V2"
+      }
+    ],
+    "transaction_fees": "0.007079562 ETH",
+    "id": "19",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "swapping coins",
+    "date": "Tue Sep 29 2020",
+    "time": "19:46:54 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0x",
+        "name": "Ethers",
+        "symbol": "ETH",
+        "amount": "- 3.0 ETH",
+        "fees": "0.009 ETH",
+        "actual_amount": "2.991 ETH"
+      },
+      {
+        "address": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+        "name": "Wrapped BTC",
+        "symbol": "WBTC",
+        "amount": "+ 0.09886632",
+        "fees": "0.0 WBTC",
+        "actual_amount": "0.09886632 WBTC"
+      }
+    ],
+    "transaction_fees": "0.006464148184925332 ETH",
+    "id": "20",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "adding liquidity",
+    "date": "Tue Sep 29 2020",
+    "time": "19:50:59 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0x",
+        "name": "Ethers",
+        "symbol": "ETH",
+        "amount": "- 2.991060998109720037 ETH",
+        "fees": "0.0 ETH",
+        "actual_amount": "2.991060998109720037 ETH"
+      },
+      {
+        "address": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+        "name": "Wrapped BTC",
+        "symbol": "WBTC",
+        "amount": "- 0.09886632",
+        "fees": "0.0 WBTC",
+        "actual_amount": "0.09886632 WBTC"
+      },
+      {
+        "address": "0xbb2b8038a1640196fbe3e38816f3e67cba72d940",
+        "name": "Uniswap V2",
+        "symbol": "UNI-V2",
+        "amount": "+ 0.000005010816350717",
+        "fees": "0.0 UNI-V2",
+        "actual_amount": "0.000005010816350717 UNI-V2"
+      }
+    ],
+    "transaction_fees": "0.00675965 ETH",
+    "id": "22",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "swapping coins",
+    "date": "Wed Sep 30 2020",
+    "time": "20:34:37 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0x",
+        "name": "Ethers",
+        "symbol": "ETH",
+        "amount": "- 2.55 ETH",
+        "fees": "0.00765 ETH",
+        "actual_amount": "2.54235 ETH"
+      },
+      {
+        "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "amount": "+ 917.134615",
+        "fees": "0.0 USDC",
+        "actual_amount": "917.134615 USDC"
+      }
+    ],
+    "transaction_fees": "0.009199632 ETH",
+    "id": "23",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "adding liquidity",
+    "date": "Wed Sep 30 2020",
+    "time": "20:47:47 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0x",
+        "name": "Ethers",
+        "symbol": "ETH",
+        "amount": "- 2.543016244060894509 ETH",
+        "fees": "0.0 ETH",
+        "actual_amount": "2.543016244060894509 ETH"
+      },
+      {
+        "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "amount": "- 916.811143",
+        "fees": "0.0 USDC",
+        "actual_amount": "916.811143 USDC"
+      },
+      {
+        "address": "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc",
+        "name": "Uniswap V2",
+        "symbol": "UNI-V2",
+        "amount": "+ 0.000038927263799246",
+        "fees": "0.0 UNI-V2",
+        "actual_amount": "0.000038927263799246 UNI-V2"
+      }
+    ],
+    "transaction_fees": "0.010912833 ETH",
+    "id": "25",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "swapping coins",
+    "date": "Thu Oct 01 2020",
+    "time": "17:09:21 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0x",
+        "name": "Ethers",
+        "symbol": "ETH",
+        "amount": "- 1.35 ETH",
+        "fees": "0.00405 ETH",
+        "actual_amount": "1.34595 ETH"
+      },
+      {
+        "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "amount": "+ 473.485745",
+        "fees": "0.0 USDC",
+        "actual_amount": "473.485745 USDC"
+      }
+    ],
+    "transaction_fees": "0.004571416155109208 ETH",
+    "id": "27",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "adding liquidity",
+    "date": "Thu Oct 01 2020",
+    "time": "17:10:32 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0x",
+        "name": "Ethers",
+        "symbol": "ETH",
+        "amount": "- 1.346832529315783022 ETH",
+        "fees": "0.0 ETH",
+        "actual_amount": "1.346832529315783022 ETH"
+      },
+      {
+        "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "amount": "- 473.809217",
+        "fees": "0.0 USDC",
+        "actual_amount": "473.809217 USDC"
+      },
+      {
+        "address": "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc",
+        "name": "Uniswap V2",
+        "symbol": "UNI-V2",
+        "amount": "+ 0.000020357481306045",
+        "fees": "0.0 UNI-V2",
+        "actual_amount": "0.000020357481306045 UNI-V2"
+      }
+    ],
+    "transaction_fees": "0.005688038180409727 ETH",
+    "id": "28",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "removing liquidity",
+    "date": "Sun Oct 04 2020",
+    "time": "01:42:13 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0xd3d2e2692501a5c9ca623199d38826e513033a17",
+        "name": "Uniswap V2",
+        "symbol": "UNI-V2",
+        "amount": "- 13.99199252228072894",
+        "fees": "0.0 UNI-V2",
+        "actual_amount": "13.99199252228072894 UNI-V2"
+      },
+      {
+        "address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+        "name": "Uniswap",
+        "symbol": "UNI",
+        "amount": "+ 244.01676254487009812",
+        "fees": "0.0 UNI",
+        "actual_amount": "244.01676254487009812 UNI"
+      },
+      {
+        "address": "0x",
+        "name": "Ethers",
+        "symbol": "ETH",
+        "amount": "+ 2.664200790936070976 ETH",
+        "fees": "0 ETH",
+        "actual_amount": "2.664200790936070976 ETH"
+      }
+    ],
+    "transaction_fees": "0.005568222 ETH",
+    "id": "34",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "undefined",
+    "date": "Sun Oct 04 2020",
+    "time": "02:04:06 GMT-0400 (Eastern Daylight Time)",
+    "assets": [],
+    "transaction_fees": "0.000900141039797143 ETH",
+    "id": "35",
+    "success": false
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "removing liquidity",
+    "date": "Sun Oct 04 2020",
+    "time": "02:04:49 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0x43ae24960e5534731fc831386c07755a2dc33d47",
+        "name": "Uniswap V2",
+        "symbol": "UNI-V2",
+        "amount": "- 4.436874297811896903",
+        "fees": "0.0 UNI-V2",
+        "actual_amount": "4.436874297811896903 UNI-V2"
+      },
+      {
+        "address": "0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f",
+        "name": "Synthetix Network Token",
+        "symbol": "SNX",
+        "amount": "+ 48.158092714663654701",
+        "fees": "0.0 SNX",
+        "actual_amount": "48.158092714663654701 SNX"
+      },
+      {
+        "address": "0x",
+        "name": "Ethers",
+        "symbol": "ETH",
+        "amount": "+ 0.618674801761671009 ETH",
+        "fees": "0 ETH",
+        "actual_amount": "0.618674801761671009 ETH"
+      }
+    ],
+    "transaction_fees": "0.010153728 ETH",
+    "id": "36",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "swapping coins",
+    "date": "Sun Oct 04 2020",
+    "time": "02:06:39 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+        "name": "Uniswap",
+        "symbol": "UNI",
+        "amount": "- 246.005502229001243195",
+        "fees": "0.738016506687003729 UNI",
+        "actual_amount": "245.267485722314239466 UNI"
+      },
+      {
+        "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "amount": "+ 926.228234",
+        "fees": "0.0 USDC",
+        "actual_amount": "926.228234 USDC"
+      }
+    ],
+    "transaction_fees": "0.006292572 ETH",
+    "id": "37",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "swapping coins",
+    "date": "Sun Oct 04 2020",
+    "time": "02:07:39 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f",
+        "name": "Synthetix Network Token",
+        "symbol": "SNX",
+        "amount": "- 49.954040442472772236",
+        "fees": "0.149862121327418316 SNX",
+        "actual_amount": "49.80417832114535392 SNX"
+      },
+      {
+        "address": "0x",
+        "name": "Ethers",
+        "symbol": "ETH",
+        "amount": "+ 0.639738684537349293 ETH",
+        "fees": "0 ETH",
+        "actual_amount": "0.639738684537349293 ETH"
+      }
+    ],
+    "transaction_fees": "0.005832144 ETH",
+    "id": "38",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "adding liquidity",
+    "date": "Sun Oct 04 2020",
+    "time": "02:11:09 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0x",
+        "name": "Ethers",
+        "symbol": "ETH",
+        "amount": "- 2.670437430467689037 ETH",
+        "fees": "0.0 ETH",
+        "actual_amount": "2.670437430467689037 ETH"
+      },
+      {
+        "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "amount": "- 925.192925",
+        "fees": "0.0 USDC",
+        "actual_amount": "925.192925 USDC"
+      },
+      {
+        "address": "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc",
+        "name": "Uniswap V2",
+        "symbol": "UNI-V2",
+        "amount": "+ 0.000040025866308482",
+        "fees": "0.0 UNI-V2",
+        "actual_amount": "0.000040025866308482 UNI-V2"
+      }
+    ],
+    "transaction_fees": "0.006585222 ETH",
+    "id": "39",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "swapping coins",
+    "date": "Sun Oct 04 2020",
+    "time": "02:16:33 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0x",
+        "name": "Ethers",
+        "symbol": "ETH",
+        "amount": "- 0.5 ETH",
+        "fees": "0.0015 ETH",
+        "actual_amount": "0.4985 ETH"
+      },
+      {
+        "address": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+        "name": "Wrapped BTC",
+        "symbol": "WBTC",
+        "amount": "+ 0.01630544",
+        "fees": "0.0 WBTC",
+        "actual_amount": "0.01630544 WBTC"
+      }
+    ],
+    "transaction_fees": "0.003929188170729556 ETH",
+    "id": "40",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "adding liquidity",
+    "date": "Sun Oct 04 2020",
+    "time": "02:21:51 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0x",
+        "name": "Ethers",
+        "symbol": "ETH",
+        "amount": "- 0.49834840440212511 ETH",
+        "fees": "0.0 ETH",
+        "actual_amount": "0.49834840440212511 ETH"
+      },
+      {
+        "address": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+        "name": "Wrapped BTC",
+        "symbol": "WBTC",
+        "amount": "- 0.01630544",
+        "fees": "0.0 WBTC",
+        "actual_amount": "0.01630544 WBTC"
+      },
+      {
+        "address": "0xbb2b8038a1640196fbe3e38816f3e67cba72d940",
+        "name": "Uniswap V2",
+        "symbol": "UNI-V2",
+        "amount": "+ 0.000000830286928581",
+        "fees": "0.0 UNI-V2",
+        "actual_amount": "0.000000830286928581 UNI-V2"
+      }
+    ],
+    "transaction_fees": "0.004291519 ETH",
+    "id": "41",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "undefined",
+    "date": "Sun Oct 11 2020",
+    "time": "08:24:06 GMT-0400 (Eastern Daylight Time)",
+    "assets": [],
+    "transaction_fees": "0.00097937 ETH",
+    "id": "42",
+    "success": false
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "removing liquidity",
+    "date": "Sun Oct 11 2020",
+    "time": "09:24:38 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0xbb2b8038a1640196fbe3e38816f3e67cba72d940",
+        "name": "Uniswap V2",
+        "symbol": "UNI-V2",
+        "amount": "- 0.000005841103279298",
+        "fees": "0.0 UNI-V2",
+        "actual_amount": "0.000005841103279298 UNI-V2"
+      },
+      {
+        "address": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+        "name": "Wrapped BTC",
+        "symbol": "WBTC",
+        "amount": "+ 0.11507747",
+        "fees": "0.0 WBTC",
+        "actual_amount": "0.11507747 WBTC"
+      },
+      {
+        "address": "0x",
+        "name": "Ethers",
+        "symbol": "ETH",
+        "amount": "+ 3.498618606916881843 ETH",
+        "fees": "0 ETH",
+        "actual_amount": "3.498618606916881843 ETH"
+      }
+    ],
+    "transaction_fees": "0.006348816 ETH",
+    "id": "44",
+    "success": true
+  },
+  {
+    "exchange": "UniswapV2",
+    "account": "0x299F770D90334C11f6Ae65D770A7cE733f1154D7",
+    "type": "removing liquidity",
+    "date": "Sun Oct 11 2020",
+    "time": "09:24:38 GMT-0400 (Eastern Daylight Time)",
+    "assets": [
+      {
+        "address": "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc",
+        "name": "Uniswap V2",
+        "symbol": "UNI-V2",
+        "amount": "- 0.000099310611413773",
+        "fees": "0.0 UNI-V2",
+        "actual_amount": "0.000099310611413773 UNI-V2"
+      },
+      {
+        "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "amount": "+ 2384.228147",
+        "fees": "0.0 USDC",
+        "actual_amount": "2384.228147 USDC"
+      },
+      {
+        "address": "0x",
+        "name": "Ethers",
+        "symbol": "ETH",
+        "amount": "+ 6.400310067752523249 ETH",
+        "fees": "0 ETH",
+        "actual_amount": "6.400310067752523249 ETH"
+      }
+    ],
+    "transaction_fees": "0.0087252 ETH",
+    "id": "45",
+    "success": true
+  }
+]

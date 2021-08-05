@@ -1,0 +1,282 @@
+[
+  {
+    "type": "swapping coins",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.017199312 Ether", "protocol": "" },
+    "id": "0",
+    "success": true
+  },
+  {
+    "type": "adding liquidity",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.01205352 Ether", "protocol": "" },
+    "id": "2",
+    "success": true
+  },
+  {
+    "type": "swapping coins",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.022457280170651935 Ether", "protocol": "" },
+    "id": "3",
+    "success": true
+  },
+  {
+    "type": "undefined",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.005970087 Ether", "protocol": "" },
+    "id": "4",
+    "success": false
+  },
+  {
+    "type": "swapping coins",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.024804096 Ether", "protocol": "" },
+    "id": "5",
+    "success": true
+  },
+  {
+    "type": "adding liquidity",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.00876590019676074 Ether", "protocol": "" },
+    "id": "7",
+    "success": true
+  },
+  {
+    "type": "swapping coins",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.008901412 Ether", "protocol": "" },
+    "id": "9",
+    "success": true
+  },
+  {
+    "type": "swapping coins",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.007063808 Ether", "protocol": "" },
+    "id": "10",
+    "success": true
+  },
+  {
+    "type": "undefined",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.001926162 Ether", "protocol": "" },
+    "id": "11",
+    "success": false
+  },
+  {
+    "type": "undefined",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.001905876 Ether", "protocol": "" },
+    "id": "12",
+    "success": false
+  },
+  {
+    "type": "adding liquidity",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.011010862 Ether", "protocol": "" },
+    "id": "13",
+    "success": true
+  },
+  {
+    "type": "removing liquidity",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.015132408 Ether", "protocol": "" },
+    "id": "14",
+    "success": true
+  },
+  {
+    "type": "swapping coins",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.0154422 Ether", "protocol": "" },
+    "id": "15",
+    "success": true
+  },
+  {
+    "type": "adding liquidity",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.015466425 Ether", "protocol": "" },
+    "id": "17",
+    "success": true
+  },
+  {
+    "type": "swapping coins",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.006423795 Ether", "protocol": "" },
+    "id": "18",
+    "success": true
+  },
+  {
+    "type": "adding liquidity",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.007079562 Ether", "protocol": "" },
+    "id": "19",
+    "success": true
+  },
+  {
+    "type": "swapping coins",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.006464148184925332 Ether", "protocol": "" },
+    "id": "20",
+    "success": true
+  },
+  {
+    "type": "adding liquidity",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.00675965 Ether", "protocol": "" },
+    "id": "22",
+    "success": true
+  },
+  {
+    "type": "swapping coins",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.009199632 Ether", "protocol": "" },
+    "id": "23",
+    "success": true
+  },
+  {
+    "type": "undefined",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.009796965 Ether", "protocol": "" },
+    "id": "24",
+    "success": true
+  },
+  {
+    "type": "adding liquidity",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.010912833 Ether", "protocol": "" },
+    "id": "25",
+    "success": true
+  },
+  {
+    "type": "undefined",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.008867852 Ether", "protocol": "" },
+    "id": "26",
+    "success": true
+  },
+  {
+    "type": "swapping coins",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.004571416155109208 Ether", "protocol": "" },
+    "id": "27",
+    "success": true
+  },
+  {
+    "type": "adding liquidity",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.005688038180409727 Ether", "protocol": "" },
+    "id": "28",
+    "success": true
+  },
+  {
+    "type": "undefined",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.005586284 Ether", "protocol": "" },
+    "id": "29",
+    "success": true
+  },
+  {
+    "type": "undefined",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.004926812 Ether", "protocol": "" },
+    "id": "30",
+    "success": true
+  },
+  {
+    "type": "undefined",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.0047495345882 Ether", "protocol": "" },
+    "id": "31",
+    "success": true
+  },
+  {
+    "type": "undefined",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.0077226983124 Ether", "protocol": "" },
+    "id": "32",
+    "success": true
+  },
+  {
+    "type": "undefined",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.0077226983124 Ether", "protocol": "" },
+    "id": "33",
+    "success": true
+  },
+  {
+    "type": "removing liquidity",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.005568222 Ether", "protocol": "" },
+    "id": "34",
+    "success": true
+  },
+  {
+    "type": "undefined",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.000900141039797143 Ether", "protocol": "" },
+    "id": "35",
+    "success": false
+  },
+  {
+    "type": "removing liquidity",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.010153728 Ether", "protocol": "" },
+    "id": "36",
+    "success": true
+  },
+  {
+    "type": "swapping coins",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.006292572 Ether", "protocol": "" },
+    "id": "37",
+    "success": true
+  },
+  {
+    "type": "swapping coins",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.005832144 Ether", "protocol": "" },
+    "id": "38",
+    "success": true
+  },
+  {
+    "type": "adding liquidity",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.006585222 Ether", "protocol": "" },
+    "id": "39",
+    "success": true
+  },
+  {
+    "type": "swapping coins",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.003929188170729556 Ether", "protocol": "" },
+    "id": "40",
+    "success": true
+  },
+  {
+    "type": "adding liquidity",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.004291519 Ether", "protocol": "" },
+    "id": "41",
+    "success": true
+  },
+  {
+    "type": "undefined",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.00097937 Ether", "protocol": "" },
+    "id": "42",
+    "success": false
+  },
+  {
+    "type": "removing liquidity",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.006348816 Ether", "protocol": "" },
+    "id": "44",
+    "success": true
+  },
+  {
+    "type": "removing liquidity",
+    "token": [{ "name": "", "symbol": "", "amount": "" }],
+    "fees": { "transaction": "0.0087252 Ether", "protocol": "" },
+    "id": "45",
+    "success": true
+  }
+]

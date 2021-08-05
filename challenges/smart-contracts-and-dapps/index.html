@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title> Smart Contract and Decentralized Applications </title>
+
+    <meta name="author" content="Dhruvin Parikh">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="./reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="./reveal.js/css/theme/black.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="./reveal.js/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? './reveal.js/css/print/pdf.css' : './reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="../reveal.js/lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <style>
+      .reveal .slides h1, .reveal .slides h2, .reveal .slides h3 {
+        text-transform: none;
+      }
+
+      .two-column {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .two-column em {
+        margin: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+<!------------------------------------------------------->
+
+
+
+<section data-markdown><script type="text/template">
+
+#### Developing a smart contract
+
+*Dhruvin Parikh, June 2021*
+
+</script></section>
+
+<section data-background-iframe="https://dhruvinparikh.github.io/#about"data-background-interactive>
+  <div
+    style="
+      position: absolute;
+      width: 40%;
+      right: 0;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5),
+        0 5px 25px rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 0.9);
+      color: #fff;
+      padding: 5px;
+      font-size: 20px;
+      text-align: center;
+    "
+  >
+    <h2>About The Presenter</h2>
+  </div>
+</section>
+
+<section data-markdown><script type="text/template">
+  ## Prop
+  * 10 minute engaging presentation
+  * Lesson plan for the third week of the live class
+  * Lesson plan for the following week (Week 4) of the live class
+  * Follow-up questions
+</script></section>
+
+<section>
+  <h2>Class Plan</h2>
+  <ul>
+    <li><a href="#/course-description">Course Description</a></li>
+    <li><a href="#/learning-outcome">Learning Outcome</a></li>
+    <li><a href="#/course-outline">Course Outline</a></li>
+    <li><a href="#/evaluation">Evaluation</a></li>
+    <li><a href="#/lesson-plan">Lesson Plan</a></li>
+    <li><a href="#/objectives">Objectives</a></li>
+    <li><a href="#/resources">Resources</a></li>
+    <li><a href="#/precap">Precap</a></li>
+  </ul>
+</section>
+
+<section id="course-description">
+  <h2>Course Description</h2>
+    <ul>
+      <li>Design, code, execute and deploy a smart contract</li>
+      <li>Foundational concepts of Solidity programming language will be covered.</li>
+      <li>Value types, data structures, global variables and basic functions.</li>
+      <li>Best practices for secure smart contract development, deployment and testing.</li>
+      <li>Design and develope e2e web3.0 applications using industry standard tools.</li>
+      </li>
+    </ul>
+</section>
+
+<section id="learning-outcome">
+  <h2>Learning outcome</h2>
+    <ul>
+      <li>Identify use of data types, data structures and global variables available in solidity.</li>
+      <li>Able to deploy and interact with smart contract.</li>
+      <li>Architect the decentralized application</li>
+      <li>Analyze a given use case and design a smart-contract based solution</li>
+    </ul>
+</section>
+
+<section id="course-outline">
+  <h2>Course Outline (Smart Contracts)</h2>
+    <p class="fragment shrink">Introduction to Smart Contracts</p>
+    <p class="fragment shrink">Solidity</p>
+    <p class="fragment grow">Developing a smart contract</p>
+    <p class="fragment slide-in fade-out">Evaluation and best practices for smart contract.</p>
+</section>
+
+<section>
+  <h2>Evaluation</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Assessment</th>
+        <th>Description</th>
+        <th>Weightage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Participation</td>
+        <td>In class participation in various activities</td>
+        <td>10%</td>
+      </tr>
+      <tr>
+        <td>Lab-1</td>
+        <td>Smart contract and data types</td>
+        <td>30%</td>
+      </tr>
+      <tr>
+        <td>Lab-2</td>
+        <td>Understanding global functions in solidity</td>
+        <td>30%</td>
+      </tr>
+      <tr>
+        <td>Lab-3</td>
+        <td>Use of modifiers and error handling</td>
+        <td>30%</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="lesson-plan">
+  <h2>Developing a smart contract</h2>
+</section>
+
+<section>
+  <h2>Analyze the problem</h2>
+    <ul>
+      <li>state variables and its visibility</li>
+      <li>functions and its visibility</li>
+      <li>access modifiers</li>
+      <li>Validation of input params in the function</li>
+    </ul>
+</section>
+
+<section data-markdown><script type="text/template">
+  ### Labs
+  
+    * [Lab - 1](./lab-1.html) : Overflow
+    * [Lab - 2](./lab-2.html) : Coinflipgame
+    * [Lab - 3](./lab-3.html) : Tipjar
+
+  </ul>
+</script></section>
+
+<section id="objectives">
+  <h2>Objectives</h2>
+  <ul>
+    <li>
+      Apply concepts learned in last lessons to write a smart contract
+    </li>
+    <li>
+      Analyze a problem statement to implement and design a smart contract.
+    </li>
+    <li>
+      Program smart contract using solidity language and Remix IDE
+    </li>
+  </ul>
+</section>
+
+<section id="resources">
+  <h2>Resources</h2>
+  <ul>
+    <li>Class diagram - <a href="https://draw.io" target="_blank" >Draw.io</a> </li>
+    <li>Smart Contract IDE - <a href="https://remix.ethereum.org/">Remix</a></li>
+    <li>Language - <a href="https://solidity.readthedocs.io/en/v0.8.4/">Solidity v0.8.4</a></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Problem Statement (Ballot Contract) </h2>
+  <ul>
+    <li>A chairperson organizes this process</li>
+    <li>Initialize proposal number while contract creation</li>
+    <li>Chairperson registers all the voters</li>
+    <li>Voters including the chairperson vote on the proposal</li>
+    <li>Weight of two for the chairperson's vote</li>
+    <li>Winning proposal is determined and announced to the world</li>
+  </ul>
+</section>
+
+<section>
+  <h2>DEMO</h2>
+  <ul>
+    <li>
+      Represent design using class diagram
+    </li>
+    <li>
+      Implementing a smart contract based on design
+    </li>
+  </ul>
+</section>
+
+<section data-markdown><script type="text/template">
+  ## Ballot Contract class diagram
+  ![](./ballot-class-diagram.png)
+</script></section>
+
+<section data-markdown><script type="text/template">
+  ## Ballot Contract 
+  [Ballot.sol](./ballot.html)
+</script></section>
+  
+<section>
+  <h2>Precap</h2>
+</section>
+
+<section>
+  <h2>Week 4 Day 1</h2>
+  <p>Events</p>
+  <ul>
+    <li>
+      Concept of event
+    </li>
+    <li>
+      Pushing event to a subscribed listener
+    </li>
+    <li>
+      Demonstrate the event using ballot example
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2>Week 4 Day 2</h2>
+  <p>Time-elements</p>
+  <ul>
+    <li>
+      Add stages and time duration of stages to ballot contract in previous session
+    </li>
+    <li>
+      Add required logic to modify the stages in the function
+    </li>
+  </ul>
+</section>
+
+<section data-markdown><script type="text/template">
+  ## Week 4 Day 3
+  ### Exception handling
+  * Concept of reverting a transaction.</li>
+  * Error handling using `require`, `revert` and `assert`.
+</script></section>
+
+<section>
+  <h2>Week 4 Day 3</h2>
+  <p>Auditing a smart contract</p>
+  <ul>
+    <li>
+      Importance of smart contract audit
+    </li>
+    <li>
+      Review of smart contract analysis tools and best practices
+    </li>
+  </ul>
+</section>
+
+<section data-markdown><script type="text/template">
+
+## End
+
+</script></section>
+
+
+
+<!------------------------------------------------------->
+
+
+      </div>
+
+    </div>
+
+    <script src="./reveal.js/lib/js/head.min.js"></script>
+    <script src="./reveal.js/js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+
+	math: {
+          mathjax: './lib/MathJax/MathJax.js',
+          config: 'TeX-AMS_SVG-full',
+	},
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: './reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: './reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: './reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: './reveal.js/plugin/math/math.js', async: true },
+           // Zoom in and out with Alt+click
+           { src: "./reveal.js/plugin/zoom-js/zoom.js", async: true },
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>

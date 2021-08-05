@@ -1,0 +1,25 @@
+version: "3"
+services:
+  kraken-app:
+    container_name: kraken-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - postgres
+    environment:
+      DATABASE_URL: postgres://postgres:newPassword@postgres:5432/postgres
+  postgres:
+    container_name: postgres
+    image: postgres:10.4
+    ports:
+      - "5400:5432"
+    volumes: 
+      - ./postgresdata:/var/lib/postgresql/data
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: newPassword
+      POSTGRES_DB: postgres
+volumes:
+    db-data:
