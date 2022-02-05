@@ -1,13 +1,6 @@
 [introducing-usedapp-framework-for-rapid-dapp-development](https://medium.com/ethworks/introducing-usedapp-framework-for-rapid-dapp-development-4959361f242a)
 
-{\rtf1\ansi\ansicpg1252\cocoartf2630
-\cocoatextscaling1\cocoaplatform1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
-{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-\ls1\ilvl0{\field{\*\fldinst{HYPERLINK "https://medium.com/ethworks/introducing-usedapp-framework-for-rapid-dapp-development-4959361f242a"}}{\fldrslt 
+[https://medium.com/ethworks/introducing-usedapp-framework-for-rapid-dapp-development-4959361f242a](https://medium.com/ethworks/introducing-usedapp-framework-for-rapid-dapp-development-4959361f242a)
 \f0\fs24 \cf0 Introducing useDApp - framework for rapid DApp development | by Marek Kirejczyk | Ethworks | Medium}}
 \f0\fs24 \
 \ls1\ilvl0{\field{\*\fldinst{HYPERLINK "https://github.com/argentlabs/argent-contracts-starknet#development"}}{\fldrslt argentlabs/argent-contracts-starknet}}\
