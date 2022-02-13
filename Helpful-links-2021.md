@@ -2,8 +2,7 @@
 
 [https://medium.com/ethworks/introducing-usedapp-framework-for-rapid-dapp-development-4959361f242a](https://medium.com/ethworks/introducing-usedapp-framework-for-rapid-dapp-development-4959361f242a)
 \f0\fs24 \cf0 Introducing useDApp - framework for rapid DApp development | by Marek Kirejczyk | Ethworks | Medium}}
-\f0\fs24 \
-\ls1\ilvl0{\field{\*\fldinst{HYPERLINK "https://github.com/argentlabs/argent-contracts-starknet#development"}}{\fldrslt argentlabs/argent-contracts-starknet}}\
+[https://github.com/argentlabs/argent-contracts-starknet#development](https://github.com/argentlabs/argent-contracts-starknet#development)
 \ls1\ilvl0{\field{\*\fldinst{HYPERLINK "https://github.com/weiroll/weiroll"}}{\fldrslt weiroll/weiroll: The weiroll virtual machine}}\
 \ls1\ilvl0{\field{\*\fldinst{HYPERLINK "https://zoetalentsolutions.com/course/smart-metering-course/"}}{\fldrslt Smart Metering Course | Zoe Talent Solutions}}\
 \ls1\ilvl0{\field{\*\fldinst{HYPERLINK "http://sinahab.com/identity-and-reputation-in-web-3/amp/?__twitter_impression=true"}}{\fldrslt Identity and Reputation in Web 3}}\
