@@ -1,0 +1,24 @@
+{
+  "name": "solidity-bridge-coding-challenge-1-zipkgn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy-deterministic": "ts-node deterministic-deployment-scripts/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@thirdweb-dev/chains": "^0.1.46",
+    "@thirdweb-dev/sdk": "0.0.0-dev-90f6bd0-20230822220247",
+    "dotenv": "^16.3.1",
+    "ethers": "^5",
+    "viem": "^1.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.18.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}

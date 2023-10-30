@@ -1,0 +1,9 @@
+openzeppelin-contracts/=lib/openzeppelin-contracts/
+@openzeppelin/=lib/openzeppelin-contracts/
+solmate/=lib/solmate/src/
+ds-test/=lib/forge-std/lib/ds-test/src/
+forge-std/=lib/forge-std/src/
+layerzero/=lib/layerzero/
+layerzero-solidity-examples/=lib/solidity-examples/
+axelar-solidity-sdk/=lib/axelar-gmp-sdk-solidity/
+openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/
