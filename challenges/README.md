@@ -1,0 +1,1 @@
+* It contains the solutions to the all the technical challenges that I appeared as a part of hiring process.
