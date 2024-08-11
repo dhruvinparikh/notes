@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Automated Market Maker</title>
+
+		<meta name="description" content="Open Class for Automated Market as an application of Blockchain">
+		<meta name="author" content="Dhruvin Parikh">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="./reveal.js@993b8f302a4dd9ed2b823ede71a42380eb244bb6/dist/reset.css">
+		<link rel="stylesheet" href="./reveal.js@993b8f302a4dd9ed2b823ede71a42380eb244bb6/dist/reveal.css">
+		<link rel="stylesheet" href="./reveal.js@993b8f302a4dd9ed2b823ede71a42380eb244bb6/dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="./reveal.js@993b8f302a4dd9ed2b823ede71a42380eb244bb6/plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+        <section data-markdown>
+          <textarea data-template>
+            ## Automated Market Maker (AMM)
+            Open Class For Certificate in Blockchain Development
+            ---
+            ## `$WHOAMI`
+            * DeFi developer and Web3.0 Instructor.
+            * Currently,
+              * Building $DINERO
+              * Blockchain Instructor at York University
+            * Previously,  
+              * CTO and lead Blockchain Developer at opty.fi
+              * Adjunct Professor at George Brown College 
+            ---
+            ## Topics
+            * Decentralized Finance
+            * Order book based exchange
+            * Decentralized Exchange
+            * Constant Product AMM
+            ---
+            ## Decentralized Finance
+            * **DeFi**: Financial systems built with smart contracts as the platform for enforcing rules, instead of legal system
+            * The intersection of economics and blockchain technology
+            * Benefits are: transparent and permissionless
+            ---
+            ## Trading Order book (OB)
+            ![Order-book](./order_book_2.jpg)
+            <small>Image Source : https://www.ifcmarkets.com/uploads/images/order_book_2.jpg</small>
+            ---
+            ## OB fundamentals
+            * Buyers/Sellers express their intent to trade by submitting bids/asks
+            * These are Limit Orders (LO) with a price P and size N
+            * Buy LO (P, N) states willingness to buy N shares at a price ≤ P
+            * Sell LO (P, N) states willingness to sell N shares at a price ≥ P
+            * OB aggregates order sizes for each unique price
+            * A Market Order (MO) states intent to buy/sell N shares at the best
+            possible price(s) available on the OB at the time of MO submission
+            ---
+            ## OB limitations
+            * Higher transaction fees and slower transaction speeds.
+            * Each trade requiring on-chain validation, the underlying network’s throughput can become a bottleneck, thus affecting the overall efficiency of the exchange.
+            * off-chain OB DEX have centralization risk
+            ---
+            ## Decentralized Exchange
+            * Platforms that facilitate peer-to-peer cryptocurrency trading without relying on intermediaries or centralized authorities.
+            * Operate on blockchains, allowing users to trade directly with one another while retaining control over their private keys and funds.
+            ---
+            ## Constant Product AMM
+            * An AMM is a special contract that buys and sells an asset according to specific rules
+            * Uniswap is most famous example on Ethereum
+            ---
+            ## Constant Product Rule
+
+            * Uniswap has a simple rule: The product of the amounts of the assets is a constant
+                  <br/>x * y = k
+            * You can swap an amount of token for another amount, but you need to keep the product the same
+            ---
+            ## Constant Product Rule, 2
+
+            * Suppose there are 10 of token A and 4 of token B
+                 <br/> k = 10 * 4 = 40
+            * The price of A in units of B is
+                 <br/>4 / 10 = 0.4
+            * The price of B in units of A is
+                 <br/>10 / 4 = 2.5
+            ---
+            ## Constant Product Rule, 3
+
+            * I want to buy exactly 2 units of A so I withdraw 2 A tokens from reserves, leaving 8 A tokens
+            * How many Bs must there now be?
+                  <br/>8 * B = 40
+                  <br/>B = 40 / 8
+                  <br/>B = 5
+            * Since B started at 4 tokens I need to deposit 1 unit of B to bring it up to 5
+            ---
+            ## Constant Product Rule, 4
+
+            * Now there are 8 of token A and 5 of token B
+            * `k` remains 40 <span style="margin-left: 20px; color: green; font-size: 120%">&check;</span>:
+            <br/>k = 8 * 5 = 40
+            * The price of A in units of B goes up:
+            <br/>5 / 8 = 0.625
+            * The price of B in units of A goes down:
+            <br/>8 / 5 = 1.6
+            ---
+            ## AMM implementation in Solidity 
+            ```
+            // SPDX-License-Identifier: MIT
+            pragma solidity ^0.8.4;
+
+            // Constant Product AMM
+            contract Uniswapper {
+                uint256 public tokenAReserves = 10 * 1e18;
+                uint256 public tokenBReserves = 4 * 1e18;
+
+                function getPriceOfA() external view returns (uint256) {
+                    return (tokenBReserves * 1e18) / tokenAReserves;
+                }
+
+                event AmountTokenBRequired(uint256 amount);
+
+                // e.g. buy only _amountTokenA of TokenA for any price of TokenB
+                function swapTokenBForExactTokenA(uint256 _amountTokenA) external {
+                    uint256 _tokenBRequired = ((tokenAReserves * tokenBReserves) /
+                        (tokenAReserves - _amountTokenA)) - tokenBReserves;
+                    tokenAReserves -= _amountTokenA;
+                    tokenBReserves += _tokenBRequired;
+                    emit AmountTokenBRequired(_tokenBRequired);
+                }
+            }
+            ```
+            ---
+            ## References    
+            * https://web.stanford.edu/class/cme241/lecture_slides/Tour-OrderBook.pdf
+            * https://medium.com/@orderlynetwork/amms-vs-order-books-in-crypto-a-comprehensive-comparison-85e3a8afcf96
+          </textarea>
+        </section>
+
+			</div>
+
+		</div>
+
+		<script src="./reveal.js@993b8f302a4dd9ed2b823ede71a42380eb244bb6/dist/reveal.js"></script>
+		<script src="./reveal.js@993b8f302a4dd9ed2b823ede71a42380eb244bb6/plugin/zoom/zoom.js"></script>
+		<script src="./reveal.js@993b8f302a4dd9ed2b823ede71a42380eb244bb6/plugin/notes/notes.js"></script>
+		<script src="./reveal.js@993b8f302a4dd9ed2b823ede71a42380eb244bb6/plugin/search/search.js"></script>
+		<script src="./reveal.js@993b8f302a4dd9ed2b823ede71a42380eb244bb6/plugin/markdown/markdown.js"></script>
+		<script src="./reveal.js@993b8f302a4dd9ed2b823ede71a42380eb244bb6/plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
