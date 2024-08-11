@@ -2,3 +2,7 @@
 	path = talks/amm-open-class/reveal.js@993b8f302a4dd9ed2b823ede71a42380eb244bb6
 	url = https://github.com/hakimel/reveal.js
 	branch = master
+[submodule "talks/blockchain-futurist-conference-23/reveal.js@e1c180565e48ae1b595f44edef319872262a99c7"]
+	path = talks/blockchain-futurist-conference-23/reveal.js@e1c180565e48ae1b595f44edef319872262a99c7
+	url = https://github.com/hakimel/reveal.js
+	branch = master
