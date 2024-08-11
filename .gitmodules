@@ -6,3 +6,7 @@
 	path = talks/blockchain-futurist-conference-23/reveal.js@e1c180565e48ae1b595f44edef319872262a99c7
 	url = https://github.com/hakimel/reveal.js
 	branch = master
+[submodule "talks/smart-contracts-and-dapps/reveal.js@00b0ace3863952ce95df4430d203686fd27bfc20"]
+	path = talks/smart-contracts-and-dapps/reveal.js@00b0ace3863952ce95df4430d203686fd27bfc20
+	url = https://github.com/hakimel/reveal.js
+	branch = master
