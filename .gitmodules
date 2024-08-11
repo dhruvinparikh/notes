@@ -10,3 +10,7 @@
 	path = talks/smart-contracts-and-dapps/reveal.js@00b0ace3863952ce95df4430d203686fd27bfc20
 	url = https://github.com/hakimel/reveal.js
 	branch = master
+[submodule "talks/overview-of-consensus/reveal.js@0b3e7839ebf4ed8b6c180aca0abafa28c67aee6d"]
+	path = talks/overview-of-consensus/reveal.js@0b3e7839ebf4ed8b6c180aca0abafa28c67aee6d
+	url = https://github.com/hakimel/reveal.js
+	branch = master
