@@ -14,7 +14,7 @@
 	path = talks/overview-of-consensus/reveal.js@0b3e7839ebf4ed8b6c180aca0abafa28c67aee6d
 	url = https://github.com/hakimel/reveal.js
 	branch = master
-[submodule "talks/reveal.js@v5.1.0"]
-	path = talks/reveal.js@v5.1.0
-	url = https://github.com/hakimel/reveal.js
+[submodule "talks/reveal.js@0b3e7839ebf4ed8b6c180aca0abafa28c67aee6d"]
+	path = talks/reveal.js@0b3e7839ebf4ed8b6c180aca0abafa28c67aee6d
+	url = https://github.com/hakimel/reveal.js.git
 	branch = master
