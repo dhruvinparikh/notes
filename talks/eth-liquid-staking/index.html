@@ -12,18 +12,18 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-    <link rel="stylesheet" href="../reveal.js@v5.1.0/css/reveal.css">
-    <link rel="stylesheet" href="../reveal.js@v5.1.0/css/theme/moon.css" id="theme">
+    <link rel="stylesheet" href="../reveal.js@0b3e7839ebf4ed8b6c180aca0abafa28c67aee6d/css/reveal.css">
+    <link rel="stylesheet" href="../reveal.js@0b3e7839ebf4ed8b6c180aca0abafa28c67aee6d/css/theme/moon.css" id="theme">
 
     <!-- Code syntax highlighting -->
-    <link rel="stylesheet" href="../reveal.js@v5.1.0/lib/css/zenburn.css">
+    <link rel="stylesheet" href="../reveal.js@0b3e7839ebf4ed8b6c180aca0abafa28c67aee6d/lib/css/zenburn.css">
 
     <!-- Printing and PDF exports -->
     <script>
       var link = document.createElement( 'link' );
       link.rel = 'stylesheet';
       link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js@v5.1.0/css/print/pdf.css' : '../reveal.js@v5.1.0/css/print/paper.css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js@0b3e7839ebf4ed8b6c180aca0abafa28c67aee6d/css/print/pdf.css' : '../reveal.js@0b3e7839ebf4ed8b6c180aca0abafa28c67aee6d/css/print/paper.css';
       document.getElementsByTagName( 'head' )[0].appendChild( link );
     </script>
 
@@ -65,6 +65,13 @@
         z-index:-10;
         width:49%;
     }
+
+    body {
+    background-image: url(../york-scs.jpg);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 96% 3%;
+}
     </style>
   </head>
 
@@ -78,11 +85,9 @@
 
 <section data-markdown><script type="text/template">
 
-### Metana Web3 Solidity Bootcamp
+### ETH Liquid Staking
 
-#### Ethereum : Proof Of Stake 
-
-*Dhruvin Parikh, February 2024*
+#### Mini Class For Certificate in Blockchain Development
 
 </script></section>
 
@@ -100,6 +105,65 @@
 
 <section data-markdown><script type="text/template">
 
+## Blockchain
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+
+## Bitcoin
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+
+## Ethereum (Blockchain 2.0)
+
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+
+## Smart Contracts
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+
+## Coin versus Token
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+
+## Consensus Mechanism
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+
+## The merge
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+
+## Ethereum Proof Of Stake
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+
+## Staking
+
+* Process of locking up your token.
+* Earn rewards for the period your token is locked
+* Lets you contribute to network security
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+
 ## The genesis event : keywords
 
 * [Deposit contract](https://etherscan.io/address/0x00000000219ab540356cbb839cbe05303d7705fa#code)
@@ -109,147 +173,6 @@
 * `Min_Genesis_Active_Validator_Count` = 16,384
 * `Genesis_Delay` = 7 days  
 * [Ethereum 2.0 Beacon-chain](https://kb.beaconcha.in/ethereum-staking/glossary#beacon-chain)
-
-</script></section>
-
-<section data-markdown><script type="text/template">
-
-## The genesis event
-
-* There are two conditions that have to get triggered to get the Ethereum 2.0 chain started!
-  * The threshold of 16,384 validators needs to be hit
-  * The  ETH1 block (=Trigger block) which determines the genesis time for ETH2 cannot be earlier than  min_genesis_time.
-
-```
-Trigger ETH1 block = min_genesis_time - genesis_delay
-```
-
-</script></section>
-
-<section data-markdown><script type="text/template">
-
-## Genesis Event : Scenario 1
-
-![](./scenario-1.webp)
-
-</script></section>
-
-<section data-markdown><script type="text/template">
-
-## Genesis Event : Scenario 2
-
-![](./scenario-2.png)
-
-</script></section>
-
-<section data-markdown><script type="text/template">
-
-## Ethereum Staking Keys
-
-* Both of these keys (ETH 1.0 and ETH 2.0) are based on the same idea and use elliptic-curve cryptography to create keys.
-* However, Ethereum 2.0 has additional functionality, and its keys require different parameters when creating them, and use the Boneh-Lynn-Shacham (=BLS) signature scheme
-
-</script></section>
-
-<section data-markdown><script type="text/template">
-
-## Ethereum Staking keys overview
-
-<img src="./staking-keys-overview.webp" width="275">
-
-</script></section>
-
-<section data-markdown><script type="text/template">
-
-## Ethereum 2.0 keys
-
-* Compared to Ethereum 1.0, where users only have a *single private key* to access their funds, Ethereum 2.0 offers two different keys. 
-    * Validator private key
-    * Withdrawal private key
-
-</script></section>
-
-<section data-markdown><script type="text/template">
-
-## Validator private key
-
-* Validator Private Key
-  * actively sign on-chain (ETH2) operations such as block proposals and attestations. Therefore these keys have to be held in a hot wallet.
-
-</script></section>
-
-<section data-markdown><script type="text/template">
-
-## If Validator Private key stolen...
-
-* Get the validator slashed by:
-  * Being a proposer and sign two different beacon blocks for the same slot
-  * Being an attester and sign an attestation that "surrounds" another one.
-  * Being an attester and sign two different attestations having the same target. 
-* Force a voluntary exit, which stops the validator from "staking", and grants access to its ETH balance to the withdrawal key owner.
-
-</script></section>
-
-<section data-markdown><script type="text/template">
-
-## Validator Public key in deposit data
-* The validator public key is included in the deposit data which allows ETH2 to identify the validator.
-
-<img src="./staking-keys-public-overview.webp" width="300">
-
-</script></section>
-
-<section data-markdown><script type="text/template">
-
-## Withdrawal key overview
-
-<img src="./withdrawal-keys-overview.webp" width="400">
-
-</script></section>
-
-<section data-markdown><script type="text/template">
-
-## Withdrawal Key
-
-* The withdrawal key is required to move the validator balance which made possible after shanghai upgrade. 
-* Just like the validator keys, the withdrawal keys also consist of two components:
- * Withdrawal private key
- * Withdrawal public key
-</script></section>
-
-<section data-markdown><script type="text/template">
-
-## Withdrawal Key security
-
-* Losing this key will lose access to the validator balance. However, the validator can still sign attestations and blocks since these actions require the validator private key, but there is little to no incentive to do so if the keys are lost.
-* To withdraw, the validator status needs to be "exited".
-</script></section>
-
-<section data-markdown><script type="text/template">
-
-## Multiple validators from same wallet
-
-<img src="./multiple-validators.webp" width="550">
-
-</script></section>
-
-<section data-markdown><script type="text/template">
-
-## BIP 44 HD Path
-
-* "Old ETH 1.0" example:
-  * `m/44'/60'/0'/0`
-
-* Path structure 
-<br/> `m / purpose' / coin_type' / account' / change / address_index`
-
-</script></section>
-
-<section data-markdown><script type="text/template">
-
-## ETH 2.0 Mnemonics overview
-
-<img src="./validator-mnemonic-overview.webp" width="750">
 
 </script></section>
 
@@ -315,6 +238,7 @@ Trigger ETH1 block = min_genesis_time - genesis_delay
 ## Rewards
 
 * Attestation Reward
+ * Whistleblower rewards
 * Block Rewards
 
 </script></section>
@@ -362,13 +286,6 @@ Trigger ETH1 block = min_genesis_time - genesis_delay
 
 </script></section>
 
-<section data-markdown><script type="text/template">
-
-## Attestation Rewards
-
-![](./attestation-properties.webp)
-
-</script></section>
 
 <section data-markdown><script type="text/template">
 
@@ -382,16 +299,37 @@ Trigger ETH1 block = min_genesis_time - genesis_delay
 
 <section data-markdown><script type="text/template">
 
-## Whistleblower rewards
-
-* A block proposer which includes slashing will be rewarded with the `slashed_validators_effective_balance / 512` where 512 is the `Whistleblower_reward_quotient`
+## User Interaction flow for liquid staking protocol
+![](./user-flow-lsd.png)
 
 </script></section>
 
 <section data-markdown><script type="text/template">
 
-## Readings
+## Liquid Staking Token Opportunites in DeFi
 
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+
+## Liquidity Pools yield logic
+![](./yield-lsd.png)
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+
+## Leveraged Staking Strategy
+![](./leverage-staking-lsd.png)
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+
+## References
+
+* [Liquid Staking Derivatives: Introduction & Strategies](https://blog.eonian.finance/liquid-staking-derivatives-introduction-strategies-a6908d7c121a)
 * [Beaconchain Knowledgebase](https://kb.beaconcha.in/)
 * All ET2.0 related [posts](https://www.attestant.io/posts/) at attestant.io
 
@@ -412,8 +350,8 @@ Trigger ETH1 block = min_genesis_time - genesis_delay
 
     </div>
 
-    <script src="../reveal.js@v5.1.0/lib/js/head.min.js"></script>
-    <script src="../reveal.js@v5.1.0/js/reveal.js"></script>
+    <script src="../reveal.js@0b3e7839ebf4ed8b6c180aca0abafa28c67aee6d/lib/js/head.min.js"></script>
+    <script src="../reveal.js@0b3e7839ebf4ed8b6c180aca0abafa28c67aee6d/js/reveal.js"></script>
 
     <script>
 
@@ -434,12 +372,12 @@ Trigger ETH1 block = min_genesis_time - genesis_delay
 
         // Optional reveal.js plugins
         dependencies: [
-          { src: '../reveal.js@v5.1.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: '../reveal.js@v5.1.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: '../reveal.js@v5.1.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-          // { src: '../reveal.js@v5.1.0/plugin/math/math.js', async: true },
+          { src: '../reveal.js@0b3e7839ebf4ed8b6c180aca0abafa28c67aee6d/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../reveal.js@0b3e7839ebf4ed8b6c180aca0abafa28c67aee6d/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../reveal.js@0b3e7839ebf4ed8b6c180aca0abafa28c67aee6d/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          // { src: '../reveal.js@0b3e7839ebf4ed8b6c180aca0abafa28c67aee6d/plugin/math/math.js', async: true },
            // Zoom in and out with Alt+click
-           { src: "../reveal.js@v5.1.0/plugin/zoom-js/zoom.js", async: true },
+           { src: "../reveal.js@0b3e7839ebf4ed8b6c180aca0abafa28c67aee6d/plugin/zoom-js/zoom.js", async: true },
         ]
       });
 
