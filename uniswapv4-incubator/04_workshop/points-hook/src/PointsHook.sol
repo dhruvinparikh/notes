@@ -16,10 +16,6 @@ contract PointsHook is BaseHook, ERC20 {
     using CurrencyLibrary for Currency;
     using BalanceDeltaLibrary for BalanceDelta;
 
-    mapping(address => address) public referredBy;
-
-    uint256 public constant POINTS_FOR_REFERRAL = 500 * 10 ** 18;
-
     constructor(
         IPoolManager _manager,
         string memory _name,
@@ -73,9 +69,7 @@ contract PointsHook is BaseHook, ERC20 {
         //      this is an "exact output for input" swap
         //      amount of ETH they spent is equal to BalanceDelta.amount0()
 
-        uint256 ethSpendAmount = swapParams.amountSpecified < 0
-            ? uint256(-swapParams.amountSpecified)
-            : uint256(int256(-delta.amount0()));
+        uint256 ethSpendAmount = uint256(int256(-delta.amount0()));
         uint256 pointsForSwap = ethSpendAmount / 5;
 
         // Mint the points including any referral points
@@ -93,7 +87,8 @@ contract PointsHook is BaseHook, ERC20 {
         bytes calldata hookData
     ) external override onlyPoolManager returns (bytes4, BalanceDelta) {
         // If this is not an ETH-TOKEN pool with this hook attached, ignore
-        if (!key.currency0.isAddressZero()) return (this.afterSwap.selector, delta);
+        if (!key.currency0.isAddressZero())
+            return (this.afterSwap.selector, delta);
 
         // Mint points equivalent to how much ETH they're adding in liquidity
         uint256 pointsForAddingLiquidity = uint256(int256(-delta.amount0()));
@@ -104,35 +99,18 @@ contract PointsHook is BaseHook, ERC20 {
         return (this.afterAddLiquidity.selector, delta);
     }
 
-    function _assignPoints(
-        bytes calldata hookData,
-        uint256 referreePoints
-    ) internal {
+    function _assignPoints(bytes calldata hookData, uint256 points) internal {
+        // If no hookData is passed in, no points will be assigned to anyone
         if (hookData.length == 0) return;
 
-        (address referrer, address referree) = abi.decode(
-            hookData,
-            (address, address)
-        );
-        if (referree == address(0)) return;
+        // Extract user address from hookData
+        address user = abi.decode(hookData, (address));
 
-        if (referredBy[referree] == address(0) && referrer != address(0)) {
-            referredBy[referree] = referrer;
-            _mint(referrer, POINTS_FOR_REFERRAL);
-        }
+        // If there is hookData but not in the format we're expecting and user address is zero
+        // nobody gets any points
+        if (user == address(0)) return;
 
-        // Mint 10% of the referree's points to the referrer
-        if (referredBy[referree] != address(0)) {
-            _mint(referrer, referreePoints / 10);
-        }
-
-        _mint(referree, referreePoints);
-    }
-
-    function getHookData(
-        address referrer,
-        address referree
-    ) public pure returns (bytes memory) {
-        return abi.encode(referrer, referree);
+        // Mint points to the user
+        _mint(user, points);
     }
 }
